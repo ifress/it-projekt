@@ -1,12 +1,35 @@
 <%@ include file="hauptkopf.jsp" %>
-<h1>Registration</h1>
-<form action="" method="post">
-		gewünschtes Login <input type="text" name="name" />  <br/> <br/>
-		gewünschtes Password <input type="password" name="password" /> <br/> <br/>
-		Vorname <input type="text" name="vorname" /> <br/> <br/>
-		Nachname <input type="text" name="nachname" /> <br/> <br/>
-		Email <input type="text" name="email" /> <br/> <br/>
-		<input type="submit" name="register" value="registration" /> 
-	</form>
+
+<h2 style="position:absolute; top:250px; left:220px;">Registrierung:</h2>
+
+ <form id="registerform" action="" method="post" style="position:absolute; top:320px; left:220px;">
+		
+		<table border="0" cellpadding="0" cellspacing="4">
+			<tr>
+      			<td align="right">Benutzername:</td>
+      			<td><input name="username" type="text" size="30" maxlength="30"></td>
+   			</tr>
+    		<tr>
+      			<td align="right">Passwort:</td>
+      			<td><input name="password" type="password" size="30" maxlength="40"></td>
+    		</tr>
+   			<tr>
+      			<td align="right">Nachname:</td>
+      			<td><input name="nachname" type="text" size="30" maxlength="40"></td>
+    		</tr>
+    		<tr>
+      			<td align="right">Vorname:</td>
+      			<td><input name="vorname" type="text" size="30" maxlength="40"></td>
+    		</tr>
+   			 <tr>
+      			<td align="right">Email:</td>
+      			<td><input name="email" type="text" size="30" maxlength="40"></td>
+    		</tr>
+    		<tr> 
+				<td><input type="submit" name="register" value="registration"></td>
+			</tr>
+  	</table>
+</form>
+	
 </body>
 </html>
