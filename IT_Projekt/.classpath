@@ -13,5 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Asem/Downloads/tiles-core-2.2.1.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/PostgreSQL/pgJDBC/postgresql-9.3-1100.jdbc4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

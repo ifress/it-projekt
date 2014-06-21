@@ -1,0 +1,48 @@
+DROP TABLE Benutzer CASCADE;
+DROP TABLE Test CASCADE;
+DROP TABLE Testergebnis CASCADE;
+DROP TABLE Fragen CASCADE;
+DROP TABLE Antworten CASCADE;
+DROP TABLE FragenAntworten CASCADE;
+
+
+CREATE TABLE Benutzer (
+	UserId		INTEGER PRIMARY KEY,
+	Username	VARCHAR(50) NOT NULL,
+	Nachname	VARCHAR(50) NOT NULL,
+	Vorname		VARCHAR(50) NOT NULL,
+	Email		VARCHAR(50) NOT NULL,
+	Password   	VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Test (
+	Testname	VARCHAR(50) PRIMARY KEY,
+	Thema	        VARCHAR(50) NOT NULL
+	
+);
+
+CREATE TABLE Testergebnis (
+	Testname	VARCHAR(50) NOT NULL REFERENCES Test(Testname),
+	UserId 		INTEGER NOT NULL REFERENCES Benutzer(UserId),
+	Ergebnis        VARCHAR(50),
+	Datum		DATE NOT NULL
+	
+);
+
+CREATE TABLE Fragen (
+	FrageId		INTEGER PRIMARY KEY,
+	Fragetext	TEXT NOT NULL	
+	
+);
+
+CREATE TABLE Antworten (
+	AntwortId	INTEGER PRIMARY KEY,
+	Antwort	   	VARCHAR(80) NOT NULL,
+	OptionTrue	BOOLEAN
+);
+
+CREATE TABLE FragenAntworten (
+    	FrageId       	INTEGER NOT NULL REFERENCES Fragen(FrageId),
+	AntwortId 	INTEGER NOT NULL REFERENCES Antworten(AntwortId)	
+);
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<!--  Zuordnung von Klasse und Tabelle -->
+	<class name="model.Benutzer" table="Benutzer" schema="public">
+        <id name="userid" type="int">
+            <column name="userid" />
+            <generator class="assigned" />
+        </id>
+		
+		<!--  Die anderen Felder-->
+		<property name="username" type="string">
+            <column name="username" not-null="true" sql-type="varchar"  />
+        </property>
+		<property name="nachname" type="string">
+            <column name="nachname" not-null="true" sql-type="varchar" />
+        </property>
+		<property name="vorname" type="string">
+            <column name="vorname" not-null="true" sql-type="varchar"  />
+        </property>
+		<property name="email" type="string">
+            <column name="email" not-null="true" sql-type="varchar"  />
+        </property>
+		<property name="password" type="string">
+            <column name="password" not-null="true" sql-type="varchar" />
+        </property>
+
+	</class>
+</hibernate-mapping>

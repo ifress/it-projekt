@@ -1,0 +1,72 @@
+﻿
+-- -----------------------------------------------
+--benutzer
+
+INSERT INTO Benutzer (UserId,Username, Nachname, Vorname, Email, Password) 
+	VALUES (1, 'stud1', 'Mueller', 'Anna', 'ann.muel@hs-bremen.de','anna14*!');
+
+INSERT INTO Benutzer (UserId, Username, Nachname, Vorname,  Email, Password) 
+	VALUES (2, 'stud2', 'Kreis', 'Marie', 'Marie.kreis@hs-bremen.de', 'Marie_23');
+-- -----------------------------------------------
+--test
+INSERT INTO Test (Testname, Thema) 
+	VALUES ('Test1', 'Software');
+
+INSERT INTO Test (Testname, Thema) 
+	VALUES ('Test2', 'Software');
+
+INSERT INTO Test (Testname, Thema) 
+	VALUES ('Test3', 'Software');
+--------------------------------------------------
+--testergebnis
+
+--------------------------------------------------
+--fragen
+INSERT INTO Fragen (FrageId, Fragetext) 
+	VALUES (1, 'Welches Kommando listet in der Shell die gestarteten Prozesse auf:');
+
+INSERT INTO Fragen (FrageId, Fragetext) 
+	VALUES (2, 'Welcher der Prozesse wird in Hintergrund gestartet:');
+
+INSERT INTO Fragen (FrageId, Fragetext) 
+	VALUES (3, 'Mit welcher Tastenkombination kann ein Vordergrundprozess gestoppt werden:');
+--------------------------------------------------
+--antworten
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (1, 'ls');
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (1, 'ls');
+
+INSERT INTO Antworten (AntwortId, Antwort, OptionTrue) 
+	VALUES (2, 'ps', true);
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (3, 'ms');
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (4, 'gedit test2.doc');
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (5, 'gedit test2.doc ~');
+
+INSERT INTO Antworten (AntwortId, Antwort, OptionTrue) 
+	VALUES (6, 'gedit test2.doc &amp;', true);
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (7, 'STRG-C');
+
+INSERT INTO Antworten (AntwortId, Antwort, OptionTrue) 
+	VALUES (8, 'STRG-Z', true);
+
+INSERT INTO Antworten (AntwortId, Antwort) 
+	VALUES (9, 'STRG-F');
+--------------------------------------------------
+
+--FragenAntworten
+INSERT INTO FragenAntworten (FrageId, AntwortId) 
+	VALUES (1, 2);
+INSERT INTO FragenAntworten (FrageId, AntwortId) 
+	VALUES (2, 6);
+INSERT INTO FragenAntworten (FrageId, AntwortId) 
+	VALUES (3, 8);
