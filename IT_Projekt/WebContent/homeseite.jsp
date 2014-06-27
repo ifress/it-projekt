@@ -2,10 +2,16 @@
 <br>
 <div id="textbox" style="text-align:left; line-height:1.4em; font-size:1em; margin-left:40px; margin-right:30px;">
 
-	<p >Ziel des Projekts ist die Planung und Entwicklung eines webbasierten Online-Tests mit den XML-Technologien.
-	Vor der Erstellung des Tests, soll entschieden,  welches Wissen gepr&uuml;ft werden wird und f&uuml;r das Thema geeignete Fragentypen ausw&auml;hlen. </p>
-	<p > F&uuml;r die Realisierung der Idee haben wir folgende Anforderungen:</p>
-	<ul>
+<h3 align="center">  <img class="bild" src="C:\Users\Asem\git\it-projekt\IT_Projekt\image\Test1.jpg" style="float:left; margin-right:20px;
+  margin-bottom:10px"/>Teste dein Wissen <br> und bekomm sofort ein Ergebnis!</h3>
+
+<p> Hallo IFI-Studentin! Hast Du dich schon immer gefragt, wieviel Du wirklich weisst? Erinnerst Du dich noch an Module der vorherigen Semester?
+Unser Wissenstest verrät es Dir und sagt viel über Deine Fachkenntnisse. Teste jetzt, wie fundiert Dein Wissen in unserem IFI-bereich ist!</p>
+<br>
+<p> Damit Du dich in unserer Seite orientieren könntest, haben wir für Dich einige Informationen zusammengestellt:</p>
+
+ 
+  <ul>
 		<li>Es handelt sich um geschlossene Fragen. Zur Auswahl gibt es Single-Choice Tests.</li>
 		<li>Die Pr&uuml;fungsfragen entsprechen dem Lehrplan. </li>
 		<li>Jede K&auml;stchen einer Frage wird mit einem Punkt gewertet.  </li>
